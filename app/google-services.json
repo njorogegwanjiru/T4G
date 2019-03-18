@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "509085656474",
+    "firebase_url": "https://chattap-e6a18.firebaseio.com",
+    "project_id": "chattap-e6a18",
+    "storage_bucket": "chattap-e6a18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509085656474:android:856661ab99f2b91f",
+        "android_client_info": {
+          "package_name": "com.example.grace.instadoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509085656474-o7p2uupdff4q8m2t89m0mn9999hqi6sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4lSoPgCGfczyqT46tN7ly6483uqBiBQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509085656474:android:8ab5bad9de7601bf",
+        "android_client_info": {
+          "package_name": "com.example.shiru.t4g"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509085656474-8pg8mhgna5bco0632bl90d3oiaasqq3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shiru.t4g",
+            "certificate_hash": "e699e5a9340eaa1687e72f13f832a4ac652d8963"
+          }
+        },
+        {
+          "client_id": "509085656474-o7p2uupdff4q8m2t89m0mn9999hqi6sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4lSoPgCGfczyqT46tN7ly6483uqBiBQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509085656474-o7p2uupdff4q8m2t89m0mn9999hqi6sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
