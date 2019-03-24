@@ -31,6 +31,7 @@ TextView btn_register;
 Toolbar toolbar;
 FirebaseAuth auth;
 DatabaseReference reference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,15 +88,17 @@ DatabaseReference reference;
                     hashMap.put("id", userid);
                     hashMap.put("username",String.valueOf(username));
                     hashMap.put("imageURL", "default");
+                    hashMap.put("status", "offline");
+                    hashMap.put("title", "patient");
+                    hashMap.put("userdesc", "");
 
                     reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
-                                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                                Intent intent = new Intent(RegisterActivity.this, home_first.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
-                                finish();
                             }
                         }
                     });

@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c2d189522af3034f095bf65f8a6d62d8\\res\\values-km\\values-km.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,308,420,507,611,729,806,883,966,1070,1175,1275,1385,1492,1600,1762,1860",
-                        "endColumns": "102,99,111,86,103,117,76,76,82,103,104,99,109,106,107,161,97,82",
-                        "endOffsets": "203,303,415,502,606,724,801,878,961,1065,1170,1270,1380,1487,1595,1757,1855,1938"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,308,420,507,611,729,806,883,966,1070,1175,1275,1385,1492,1600,1762,4559",
-                        "endColumns": "102,99,111,86,103,117,76,76,82,103,104,99,109,106,107,161,97,82",
-                        "endOffsets": "203,303,415,502,606,724,801,878,961,1065,1170,1270,1380,1487,1595,1757,1855,4637"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\48037778d72ebb437fcaa1e39b31fcc9\\res\\values-km\\values.xml",
+                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.2.0.aar\\afc4e0ea257c6ffb660d7d3393fea0fe\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,6 +38,40 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-17.4.0.aar\\cd9d621f7adb3d4e9cf6ed7e451cfc3a\\res\\values-km\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "100",
+                        "endOffsets": "305"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4559",
+                        "endColumns": "104",
+                        "endOffsets": "4659"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c2d189522af3034f095bf65f8a6d62d8\\res\\values-km\\values-km.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,208,308,420,507,611,729,806,883,966,1070,1175,1275,1385,1492,1600,1762,1860",
+                        "endColumns": "102,99,111,86,103,117,76,76,82,103,104,99,109,106,107,161,97,82",
+                        "endOffsets": "203,303,415,502,606,724,801,878,961,1065,1170,1270,1380,1487,1595,1757,1855,1938"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,208,308,420,507,611,729,806,883,966,1070,1175,1275,1385,1492,1600,1762,4664",
+                        "endColumns": "102,99,111,86,103,117,76,76,82,103,104,99,109,106,107,161,97,82",
+                        "endOffsets": "203,303,415,502,606,724,801,878,961,1065,1170,1270,1380,1487,1595,1757,1855,4742"
+                    }
+                },
+                {
                     "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\90f9e57d37e9ea5c5a5625674932efd7\\res\\values-km\\values-km.xml",
                     "from": {
                         "startLines": "2",
@@ -64,11 +81,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "38",
+                        "startLines": "39",
                         "startColumns": "4",
-                        "startOffsets": "4642",
+                        "startOffsets": "4747",
                         "endColumns": "100",
-                        "endOffsets": "4738"
+                        "endOffsets": "4843"
                     }
                 }
             ]

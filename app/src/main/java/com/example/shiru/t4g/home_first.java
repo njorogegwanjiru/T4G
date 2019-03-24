@@ -23,6 +23,7 @@ public class home_first extends AppCompatActivity {
     private SliderAdapter sliderAdapter;
     private Button mNextBtn, mBackBtn;
     private int mCurrentPage;
+    TextView get_started;
 
     @Override
     protected void onStart() {
@@ -30,11 +31,6 @@ public class home_first extends AppCompatActivity {
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        if(firebaseUser!=null){
-            Intent intent = new Intent(home_first.this,MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
     }
 
     @Override
@@ -46,6 +42,7 @@ public class home_first extends AppCompatActivity {
         mDotLayout = (LinearLayout) findViewById(R.id.dotsLayout);
         mBackBtn = (Button) findViewById(R.id.prevBtn);
         mNextBtn = (Button) findViewById(R.id.nextBtn);
+        get_started = findViewById(R.id.get_started);
 
         sliderAdapter = new SliderAdapter(this);
         mSlideViewPager.setAdapter(sliderAdapter);
@@ -89,10 +86,6 @@ public class home_first extends AppCompatActivity {
             mDots[position].setTextColor(getResources().getColor(R.color.colorBlue));
         }
     }
-    public void register(){
-        Intent intent = new Intent(this, StartActivity.class);
-        startActivity(intent);
-    }
 
     ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
         @Override
@@ -106,31 +99,31 @@ public class home_first extends AppCompatActivity {
             mCurrentPage = i;
 
 
-            if (i == 0) {
-                mNextBtn.setEnabled(true);
+           if (i == mDots.length-1) {
+
+                mNextBtn.setEnabled(false);
                 mBackBtn.setEnabled(false);
+                get_started.setEnabled(true);
                 mBackBtn.setVisibility(View.INVISIBLE);
+                mNextBtn.setVisibility(View.INVISIBLE);
+                get_started.setVisibility(View.VISIBLE);
 
                 mNextBtn.setText("");
                 mBackBtn.setText("");
-
-            } else if (i == mDots.length-1) {
-                mNextBtn.setEnabled(true);
-                mBackBtn.setEnabled(true);
-                mBackBtn.setVisibility(View.VISIBLE);
-
-                mNextBtn.setText("Get Started");
-                mBackBtn.setText("");
-                mNextBtn.setOnClickListener(new View.OnClickListener(){
+                get_started.setOnClickListener(new View.OnClickListener(){
                     @Override
                     public void onClick(View view){
-                        register();
+                        Intent intent = new Intent(home_first.this, IntroActivity.class);
+                        startActivity(intent);
                     }
                 });
             }else{
-                mNextBtn.setEnabled(true);
-                mBackBtn.setEnabled(true);
-                mBackBtn.setVisibility(View.VISIBLE);
+                mNextBtn.setEnabled(false);
+                mBackBtn.setEnabled(false);
+                get_started.setEnabled(false);
+                mBackBtn.setVisibility(View.INVISIBLE);
+                mNextBtn.setVisibility(View.INVISIBLE);
+                get_started.setVisibility(View.INVISIBLE);
 
                 mNextBtn.setText("");
                 mBackBtn.setText("");

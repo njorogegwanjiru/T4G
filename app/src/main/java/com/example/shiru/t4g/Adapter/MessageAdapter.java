@@ -53,15 +53,21 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull MessageAdapter.ViewHolder holder, int position) {
         Chat chat = mChat.get(position);
+        int x = getItemViewType(position);
+
         holder.show_message.setText(chat.getMessage());
 
-        if (imageurl.equals("default"))
-        {
-            holder.profile_image.setImageResource(R.mipmap.ic_launcher);
+        if (position==mChat.size()-1 && x==1){
+            if (chat.isIsseen()){
+                holder.txt_seen.setText( chat.getTime() + " Seen");
+            }
+            else{
+            holder.txt_seen.setText( chat.getTime() + " Delivered");
         }
-        else
-        {
-            Glide.with(mContext).load(imageurl).into(holder.profile_image);
+        }
+        else{
+            holder.txt_seen.setText(chat.getTime());
+
         }
     }
 
@@ -74,11 +80,14 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         public TextView show_message;
         public ImageView profile_image;
 
+        public TextView txt_seen;
+
         public  ViewHolder(View itemView){
             super(itemView);
 
             show_message = itemView.findViewById(R.id.show_message);
             profile_image = itemView.findViewById(R.id.profile_image_);
+            txt_seen = itemView.findViewById(R.id.txt_seen);
         }
     }
     @Override

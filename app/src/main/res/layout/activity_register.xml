@@ -27,31 +27,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Name"
+        android:hint="@string/name"
         android:drawableLeft="@drawable/name"
         android:layout_below="@id/logo"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:drawableStart="@drawable/name" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Email"
+        android:hint="@string/email"
         android:drawableLeft="@drawable/email"
         android:layout_below="@id/username"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:drawableStart="@drawable/email" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Password"
+        android:hint="@string/password"
         android:drawableLeft="@drawable/password"
         android:layout_marginBottom="20dp"
         android:layout_below="@id/email"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:drawableStart="@drawable/password" />
 
     <TextView
         android:layout_width="match_parent"
@@ -59,7 +62,7 @@
         android:layout_marginRight="10dp"
         android:layout_height="wrap_content"
         android:background="@drawable/login"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textAlignment="center"
         android:textSize="18sp"
         android:id="@+id/btn_register"
@@ -69,18 +72,19 @@
         android:layout_marginTop="10dp"
         android:layout_below="@+id/password"
 
-        />
+        android:focusable="true" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Already have an account? SIGN IN."
+        android:text="@string/already_have_an_account_sign_in"
         android:textColor="#5612CF"
         android:clickable="true"
         android:onClick="login"
         android:textAlignment="center"
         android:paddingTop="10dp"
         android:padding="10dp"
-        android:layout_below="@id/btn_register"/>
+        android:layout_below="@id/btn_register"
+        android:focusable="true" />
 
 </RelativeLayout>

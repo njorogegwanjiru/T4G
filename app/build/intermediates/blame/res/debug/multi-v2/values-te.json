@@ -13,11 +13,11 @@
                         "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,2001"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,328,439,529,634,759,841,923,1007,1120,1228,1327,1438,1540,1657,1823,4601",
+                        "startOffsets": "105,219,328,439,529,634,759,841,923,1007,1120,1228,1327,1438,1540,1657,1823,4706",
                         "endColumns": "113,108,110,89,104,124,81,81,83,112,107,98,110,101,116,165,100,81",
-                        "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,4678"
+                        "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,4783"
                     }
                 },
                 {
@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-17.4.0.aar\\cd9d621f7adb3d4e9cf6ed7e451cfc3a\\res\\values-te\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "100",
+                        "endOffsets": "305"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4601",
+                        "endColumns": "104",
+                        "endOffsets": "4701"
+                    }
+                },
+                {
                     "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\90f9e57d37e9ea5c5a5625674932efd7\\res\\values-te\\values-te.xml",
                     "from": {
                         "startLines": "2",
@@ -47,15 +64,15 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "38",
+                        "startLines": "39",
                         "startColumns": "4",
-                        "startOffsets": "4683",
+                        "startOffsets": "4788",
                         "endColumns": "100",
-                        "endOffsets": "4779"
+                        "endOffsets": "4884"
                     }
                 },
                 {
-                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\48037778d72ebb437fcaa1e39b31fcc9\\res\\values-te\\values.xml",
+                    "source": "C:\\Users\\shiru\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.2.0.aar\\afc4e0ea257c6ffb660d7d3393fea0fe\\res\\values-te\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
